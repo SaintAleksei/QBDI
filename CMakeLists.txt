@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.12)
+cmake_minimum_required(VERSION 3.14)
 project(QBDI)
 
 include(GNUInstallDirs)
@@ -554,3 +554,9 @@ add_subdirectory(docs)
 # Add packaging
 
 add_subdirectory(package)
+
+# Add dynamic memory tracer
+
+if(QBDI_MEMTRACER)
+    add_subdirectory(MemTracer)
+endif()

@@ -1,0 +1,7 @@
+MemTracer is a utility that can create your program's dynamic memory graph. It it based on QBDI. To build QBDI with this utility run 
+
+    $ mkdir build && cd build
+    $ ../cmake/config/config-memtracer.sh
+    $ cmake --build .
+
+Today it is available only for x86_64 architecture and linux platform
